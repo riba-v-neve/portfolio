@@ -60,8 +60,9 @@
 .vtb-anchor-nav a:hover { color: #07101d; background: var(--pink); }
 
 .vtb-section { padding: clamp(100px, 11vw, 170px) var(--pad); }
-.vtb-section-label { display: grid; grid-template-columns: 60px 1fr; align-items: center; width: max-content; margin-bottom: clamp(65px, 9vw, 130px); font-size: 10px; text-transform: uppercase; letter-spacing: .1em; }
-.vtb-section-label span { font-family: var(--display-font); font-size: 11px; }
+.vtb-section-label { display: flex; align-items: baseline; gap: .45em; width: max-content; margin-bottom: clamp(65px, 9vw, 130px); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; }
+.vtb-section-label span { font: inherit; }
+.vtb-section-label span::after { content: " /"; }
 .vtb-section-label p { margin: 0; }
 
 .vtb-overview { color: var(--black); background: var(--vtb-paper); }

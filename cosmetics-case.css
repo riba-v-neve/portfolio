@@ -81,8 +81,9 @@
 .shop-anchor-nav a:hover { color: var(--shop-ink); background: var(--shop-lime); }
 
 .shop-section { padding: clamp(95px, 11vw, 165px) var(--pad); }
-.shop-section-label { display: grid; grid-template-columns: 60px 1fr; align-items: center; width: max-content; margin-bottom: clamp(65px, 8vw, 110px); font-size: 10px; text-transform: uppercase; letter-spacing: .1em; }
-.shop-section-label span { font-family: var(--display-font); font-size: 11px; }
+.shop-section-label { display: flex; align-items: baseline; gap: .45em; width: max-content; margin-bottom: clamp(65px, 8vw, 110px); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; }
+.shop-section-label span { font: inherit; }
+.shop-section-label span::after { content: " /"; }
 .shop-section-label p { margin: 0; }
 .shop-overview { background: var(--shop-paper); }
 .shop-overview-head,
