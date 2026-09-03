@@ -7,7 +7,7 @@
     <meta name="description" content="Резюме Владиславы Задорожной, junior product designer." />
     <title>Резюме — Владислава Задорожная</title>
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=11" />
+    <link rel="stylesheet" href="styles.css?v=16" />
     <script src="script.js" defer></script>
   </head>
   <body class="resume-body">
@@ -15,15 +15,16 @@
       <a class="logo" href="index.html" aria-label="На главную"><img src="assets/images/logo.svg" alt="" /></a>
       <nav class="desktop-nav"><a href="index.html#projects">Кейсы</a><a href="index.html#about">Обо мне</a><a href="resume.html">Резюме</a></nav>
       <a class="header-contact" href="index.html#contact">Написать <span>↗</span></a>
-      <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false" data-menu-button><span></span><span></span></button>
-      <nav class="mobile-menu" data-mobile-menu><a href="index.html#projects">Кейсы</a><a href="index.html#about">Обо мне</a><a href="resume.html">Резюме</a><a href="index.html#contact">Контакты</a></nav>
+      <button class="menu-button" type="button" aria-label="Открыть меню" aria-controls="mobile-menu" aria-expanded="false" data-menu-button><span></span><span></span></button>
     </header>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация" data-mobile-menu><a href="index.html#projects">Кейсы</a><a href="index.html#about">Обо мне</a><a href="resume.html">Резюме</a><a href="index.html#contact">Контакты</a></nav>
 
     <main class="resume-page">
       <section class="resume-intro">
         <div>
           <p class="resume-kicker">Junior product designer</p>
-          <h1>ВЛАДИСЛАВА<span>ЗАДОРОЖНАЯ</span></h1>
+          <h1>Владислава<span>Задорожная</span></h1>
           <div class="resume-actions">
             <a class="resume-button resume-button--primary" href="assets/docs/vladislava-zadorozhnaya-resume.pdf" download>Скачать PDF ↓</a>
             <button class="resume-button" type="button" onclick="window.print()">Распечатать</button>

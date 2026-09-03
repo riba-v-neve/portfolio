@@ -7,8 +7,8 @@
     <meta name="description" content="Кейс Владиславы Задорожной: дизайн многостраничного интернет-магазина косметики." />
     <title>Интернет-магазин косметики — кейс Владиславы Задорожной</title>
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=12" />
-    <link rel="stylesheet" href="cosmetics-case.css?v=2" />
+    <link rel="stylesheet" href="styles.css?v=16" />
+    <link rel="stylesheet" href="cosmetics-case.css?v=5" />
     <script src="script.js" defer></script>
   </head>
   <body class="shop-body">
@@ -18,9 +18,10 @@
       <a class="logo" href="index.html" aria-label="На главную"><img src="assets/images/logo.svg" alt="" /></a>
       <nav class="desktop-nav" aria-label="Основная навигация"><a href="index.html#projects">Кейсы</a><a href="index.html#about">Обо&nbsp;мне</a><a href="resume.html">Резюме</a></nav>
       <a class="header-contact" href="index.html#contact">Написать <span>↗</span></a>
-      <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false" data-menu-button><span></span><span></span></button>
-      <nav class="mobile-menu" data-mobile-menu><a href="index.html#projects">Кейсы</a><a href="index.html#about">Обо&nbsp;мне</a><a href="resume.html">Резюме</a><a href="index.html#contact">Контакты</a></nav>
+      <button class="menu-button" type="button" aria-label="Открыть меню" aria-controls="mobile-menu" aria-expanded="false" data-menu-button><span></span><span></span></button>
     </header>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация" data-mobile-menu><a href="index.html#projects">Кейсы</a><a href="index.html#about">Обо&nbsp;мне</a><a href="resume.html">Резюме</a><a href="index.html#contact">Контакты</a></nav>
 
     <main id="case-content">
       <section class="shop-hero">
@@ -40,7 +41,7 @@
       </section>
 
       <nav class="shop-anchor-nav" aria-label="Навигация по кейсу">
-        <a href="#overview">Результат</a><a href="#structure">Структура</a><a href="#system">UI-система</a><a href="#screens">Экраны</a><a href="#handoff">Передача</a>
+        <a href="#overview">Результат</a><a href="#structure">Структура</a><a href="#system">UI-система</a><a href="#screens">Экраны</a><a href="#handoff">Передача</a><a href="#outcome">Итог</a>
       </nav>
 
       <section class="shop-section shop-overview" id="overview">
@@ -135,7 +136,7 @@
         </div>
       </section>
 
-      <section class="shop-section shop-outcome">
+      <section class="shop-section shop-outcome" id="outcome">
         <div class="shop-section-label reveal"><span>07</span><p>Итоги</p></div>
         <div class="shop-outcome-grid">
           <article class="reveal"><span>Собрано</span><h3>Полный путь покупки</h3><p>От главной и&nbsp;каталога до&nbsp;корзины и&nbsp;оформления.</p></article>

@@ -7,7 +7,7 @@
     <meta name="description" content="Кейс из портфолио продуктового дизайнера Владиславы Задорожной." />
     <title>Кейс — Владислава Задорожная</title>
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=11" />
+    <link rel="stylesheet" href="styles.css?v=16" />
     <script src="script.js" defer></script>
     <script src="case.js?v=2" defer></script>
   </head>
@@ -16,17 +16,19 @@
       <a class="logo" href="index.html" aria-label="На главную"><img src="assets/images/logo.svg" alt="" /></a>
       <nav class="desktop-nav" aria-label="Основная навигация"><a href="index.html#projects">Кейсы</a><a href="index.html#about">Обо мне</a><a href="resume.html">Резюме</a></nav>
       <a class="header-contact" href="index.html#contact">Написать <span>↗</span></a>
-      <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false" data-menu-button><span></span><span></span></button>
-      <nav class="mobile-menu" data-mobile-menu><a href="index.html#projects">Кейсы</a><a href="index.html#about">Обо мне</a><a href="resume.html">Резюме</a><a href="index.html#contact">Контакты</a></nav>
+      <button class="menu-button" type="button" aria-label="Открыть меню" aria-controls="mobile-menu" aria-expanded="false" data-menu-button><span></span><span></span></button>
     </header>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация" data-mobile-menu><a href="index.html#projects">Кейсы</a><a href="index.html#about">Обо мне</a><a href="resume.html">Резюме</a><a href="index.html#contact">Контакты</a></nav>
     <main>
-      <section class="case-hero">
+      <section class="case-hero" id="top">
         <a class="case-back" href="index.html#projects">← Все кейсы</a>
         <h1 class="case-title" data-case-title></h1>
         <p class="case-subtitle" data-case-subtitle></p>
         <div class="case-poster" aria-hidden="true"><strong data-case-poster></strong><span data-case-index></span></div>
       </section>
-      <section class="case-overview section">
+      <nav class="case-anchor-nav" aria-label="Навигация по кейсу"><a href="#overview">Обзор</a><a href="#process">Структура</a><a href="#status">Статус</a></nav>
+      <section class="case-overview section" id="overview">
         <div class="overview-grid reveal">
           <h2>Коротко<br />о проекте</h2>
           <div class="overview-copy">
@@ -39,7 +41,7 @@
           </div>
         </div>
       </section>
-      <section class="placeholder-process section">
+      <section class="placeholder-process section" id="process">
         <div class="placeholder-head reveal"><h2>Проблема.<br />Контекст.<br />Решение.</h2><p>Именно по этой логике здесь будет собран полный рассказ: кратко, с аргументами и большим количеством визуальных материалов.</p></div>
         <div class="placeholder-steps">
           <article class="placeholder-step reveal"><span>01</span><h3>Проблема</h3><p>Что не работает в текущем сценарии и почему это важно для пользователя и продукта.</p></article>
@@ -47,7 +49,7 @@
           <article class="placeholder-step reveal"><span>03</span><h3>Решение</h3><p>Финальный интерфейс, проверка сценария, результат и выводы из проекта.</p></article>
         </div>
       </section>
-      <section class="case-coming section reveal">
+      <section class="case-coming section reveal" id="status">
         <h2>КЕЙС<br />ГОТОВИТСЯ<span class="pink-dot">.</span></h2>
         <p>Сейчас это аккуратная страница-заглушка. Она уже показывает место будущего кейса, не выдавая придуманные детали за реальный процесс.</p>
       </section>

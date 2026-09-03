@@ -8,8 +8,8 @@
   --shop-violet: #5e4d78;
 }
 
-.shop-body { color: var(--shop-ink); background: var(--shop-paper); }
-.shop-body main { overflow: clip; }
+.shop-body { color: var(--shop-ink); background: var(--shop-paper); overflow-x: clip; }
+.shop-body main { overflow: visible; }
 .shop-body h1,
 .shop-body h2,
 .shop-body h3 { text-wrap: balance; }
@@ -214,8 +214,9 @@
   .shop-hero-lead { margin: 24px 0 22px; font-size: 16px; }
   .shop-hero-result { margin-top: 55px; border-radius: 17px; transform: none; }
   .shop-placeholder-note { align-items: flex-start; flex-direction: column; gap: 5px; }
-  .shop-anchor-nav { justify-content: flex-start; overflow-x: auto; }
-  .shop-anchor-nav a { white-space: nowrap; }
+  .shop-anchor-nav { justify-content: flex-start; overflow-x: auto; scrollbar-width: none; }
+  .shop-anchor-nav::-webkit-scrollbar { display: none; }
+  .shop-anchor-nav a { flex: 0 0 auto; white-space: nowrap; }
   .shop-section { padding-block: 78px; }
   .shop-section-label { margin-bottom: 48px; }
   .shop-overview-head h2,
