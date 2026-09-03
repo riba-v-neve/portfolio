@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000716" />
+    <meta name="description" content="Кейс Владиславы Задорожной: продуктовая концепция интерфейса платёжного терминала." />
+    <title>Платёжный терминал — кейс Владиславы Задорожной</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=11" />
+    <link rel="stylesheet" href="vtb-case.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="vtb-body">
+    <a class="skip-link" href="#case-content">Перейти к&nbsp;кейсу</a>
+
+    <header class="site-header" data-header>
+      <a class="logo" href="index.html" aria-label="На главную"><img src="assets/images/logo.svg" alt="" /></a>
+      <nav class="desktop-nav" aria-label="Основная навигация"><a href="index.html#projects">Кейсы</a><a href="index.html#about">Обо&nbsp;мне</a><a href="resume.html">Резюме</a></nav>
+      <a class="header-contact" href="index.html#contact">Написать <span>↗</span></a>
+      <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false" data-menu-button><span></span><span></span></button>
+      <nav class="mobile-menu" data-mobile-menu><a href="index.html#projects">Кейсы</a><a href="index.html#about">Обо&nbsp;мне</a><a href="resume.html">Резюме</a><a href="index.html#contact">Контакты</a></nav>
+    </header>
+
+    <main id="case-content">
+      <section class="vtb-hero" id="top">
+        <div class="vtb-hero-grid"></div>
+        <div class="vtb-hero-copy">
+          <a class="vtb-back" href="index.html#projects">← Все кейсы</a>
+          <p class="vtb-kicker">Product design · ВТБ · 2025</p>
+          <h1>ПЛАТЁЖНЫЙ<br /><span>ТЕРМИНАЛ</span></h1>
+          <p class="vtb-hero-lead">Концепция интерфейса терминала нового поколения: разные способы оплаты, один понятный сценарий.</p>
+          <div class="vtb-tags"><span>UX research</span><span>User flow</span><span>UI system</span><span>3D</span></div>
+        </div>
+        <div class="vtb-hero-art">
+          <img src="assets/cases/vtb/terminal-mockup.webp" alt="Платёжный терминал с финальным интерфейсом" />
+        </div>
+      </section>
+
+      <nav class="vtb-anchor-nav" aria-label="Навигация по кейсу">
+        <a href="#overview">Обзор</a><a href="#research">Исследование</a><a href="#ux">UX</a><a href="#ui">UI-система</a><a href="#screens">Экраны</a><a href="#result">Итоги</a>
+      </nav>
+
+      <section class="vtb-overview vtb-section" id="overview">
+        <div class="vtb-section-label reveal"><span>01</span><p>Задача и&nbsp;результат</p></div>
+        <div class="vtb-overview-intro reveal">
+          <h2>ОПЛАТА<br />БЕЗ ДОГАДОК<span>.</span></h2>
+          <p>Я спроектировала интерфейс для&nbsp;вертикального сенсорного терминала, который поддерживает карту, NFC, QR через&nbsp;СБП и&nbsp;биометрию. Главный фокус — быстрый сценарий, ясные статусы и&nbsp;понятные действия для&nbsp;людей с&nbsp;разным уровнем цифровой грамотности.</p>
+        </div>
+        <dl class="vtb-facts reveal">
+          <div><dt>Моя роль</dt><dd>UX/UI-дизайнер</dd></div>
+          <div><dt>Формат</dt><dd>Учебный проект курса ВТБ</dd></div>
+          <div><dt>Срок</dt><dd>Октябрь–декабрь 2025</dd></div>
+          <div><dt>Инструменты</dt><dd>Figma · Blender</dd></div>
+        </dl>
+      </section>
+
+      <section class="vtb-result-showcase">
+        <div class="vtb-result-image vtb-result-image--full reveal"><img src="assets/cases/vtb/hero-render.webp" alt="Финальная композиция проекта с телефоном, картой и платёжным терминалом" loading="lazy" /></div>
+        <div class="vtb-result-copy reveal">
+          <p class="vtb-kicker">Что получилось</p>
+          <h2>Одна логика для&nbsp;разных способов оплаты</h2>
+          <div class="vtb-result-points">
+            <div><b>08</b><span>ключевых состояний интерфейса</span></div>
+            <div><b>03</b><span>фокусных способа оплаты</span></div>
+            <div><b>3D</b><span>модель терминала и&nbsp;авторские иконки</span></div>
+          </div>
+          <p class="vtb-honesty">Это концепт: количественные результаты требуют тестирования на&nbsp;реальном устройстве.</p>
+        </div>
+      </section>
+
+      <section class="vtb-context vtb-section">
+        <div class="vtb-section-label reveal"><span>02</span><p>Контекст</p></div>
+        <div class="vtb-context-head reveal">
+          <h2>У&nbsp;пользователя есть несколько секунд.</h2>
+          <p>Оплата происходит в&nbsp;шумном магазине, часто в&nbsp;спешке и&nbsp;с&nbsp;занятыми руками. Если терминал не&nbsp;показывает, что операция началась, человек повторно прикладывает карту или обращается к&nbsp;кассиру.</p>
+        </div>
+        <div class="vtb-constraints">
+          <article class="reveal"><span>01</span><h3>Время</h3><p>Очередь за&nbsp;спиной и&nbsp;ожидание мгновенной реакции.</p></article>
+          <article class="reveal"><span>02</span><h3>Среда</h3><p>Шум, плохой свет, верхняя одежда и&nbsp;нестабильные условия для&nbsp;камеры.</p></article>
+          <article class="reveal"><span>03</span><h3>Устройство</h3><p>Вертикальный сенсорный экран, управление пальцами и&nbsp;NFC-зона сверху.</p></article>
+          <article class="reveal"><span>04</span><h3>Сеть</h3><p>Возможные задержки эквайринга, СБП и&nbsp;банковского приложения.</p></article>
+          <article class="reveal"><span>05</span><h3>Доступность</h3><p>Крупный текст, RU/EN и&nbsp;статусы, которые не&nbsp;зависят только от&nbsp;цвета.</p></article>
+        </div>
+      </section>
+
+      <section class="vtb-success-criteria vtb-section">
+        <div class="vtb-section-label reveal"><span>03</span><p>Критерии успеха</p></div>
+        <div class="vtb-criteria-grid">
+          <div class="vtb-criteria-title reveal"><p>Если запускать продукт, я&nbsp;бы проверяла решение по&nbsp;четырём показателям:</p></div>
+          <ol class="vtb-metric-list">
+            <li class="reveal"><span>↓</span><p>Среднее время оплаты</p></li>
+            <li class="reveal"><span>↑</span><p>Успешные оплаты с&nbsp;первой попытки</p></li>
+            <li class="reveal"><span>↓</span><p>Обращения к&nbsp;кассиру за&nbsp;подсказкой</p></li>
+            <li class="reveal"><span>↑</span><p>Использование NFC, QR и&nbsp;биометрии</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="vtb-research vtb-section" id="research">
+        <div class="vtb-section-label reveal"><span>04</span><p>Исследование</p></div>
+        <div class="vtb-research-head reveal">
+          <h2>Сначала разобралась в&nbsp;контексте.</h2>
+          <p>Провела кабинетный анализ актуальных терминалов российского рынка, изучила привычные сценарии и&nbsp;выделила четыре группы пользователей. Это помогло сформулировать ограничения и&nbsp;гипотезы до&nbsp;перехода к&nbsp;макетам.</p>
+        </div>
+        <div class="vtb-market reveal">
+          <article><span>Тип 01</span><h3>Классические терминалы</h3><p>Привычны и&nbsp;просты, но&nbsp;маленький экран не&nbsp;позволяет объяснять новые способы оплаты и&nbsp;ошибки человеческим языком.</p></article>
+          <div class="vtb-market-choice">ФОКУС<br />КОНЦЕПТА →</div>
+          <article class="selected"><span>Тип 02</span><h3>Сенсорные терминалы</h3><p>Дают пространство для&nbsp;крупных подсказок, разных сценариев и&nbsp;понятной обратной связи, но&nbsp;рискуют стать перегруженными.</p></article>
+        </div>
+
+        <div class="vtb-audience-head reveal"><h3>Четыре группы — разные ожидания</h3><p>Всем нужен быстрый результат, но&nbsp;причины ошибок и&nbsp;уровень уверенности различаются.</p></div>
+        <div class="vtb-audience-grid">
+          <article class="reveal"><span>18–30</span><h3>Молодые пользователи</h3><p>Платят телефоном или часами. Ждут мгновенного отклика и&nbsp;минимум шагов.</p><blockquote>«Хочу сразу видеть, что оплата началась»</blockquote></article>
+          <article class="reveal"><span>25–50</span><h3>Занятые взрослые</h3><p>Платят в&nbsp;спешке. Ценят предсказуемость и&nbsp;уверенность, что списание не&nbsp;повторится.</p><blockquote>«Хочу понимать статус на&nbsp;каждом шаге»</blockquote></article>
+          <article class="reveal"><span>60+</span><h3>Пожилые пользователи</h3><p>Чаще выбирают карту. Нуждаются в&nbsp;крупном тексте, спокойном темпе и&nbsp;простых формулировках.</p><blockquote>«Хочу не&nbsp;бояться нажать не&nbsp;туда»</blockquote></article>
+          <article class="reveal"><span>RU / EN</span><h3>Иностранные гости</h3><p>Ориентируются по&nbsp;универсальным иконкам и&nbsp;ожидают английский интерфейс.</p><blockquote>«Хочу понять результат без&nbsp;русского языка»</blockquote></article>
+        </div>
+      </section>
+
+      <section class="vtb-problems vtb-section">
+        <div class="vtb-section-label reveal"><span>05</span><p>Проблемы и&nbsp;гипотезы</p></div>
+        <div class="vtb-problem-title reveal"><h2>Четыре барьера на&nbsp;пути к&nbsp;оплате</h2><p>Каждую проблему перевела в&nbsp;проверяемый принцип будущего интерфейса.</p></div>
+        <div class="vtb-problem-grid">
+          <article class="reveal"><span>01 · Понятность</span><h3>Неясно, куда прикладывать карту и&nbsp;что происходит сейчас.</h3><p>Гипотеза: один главный способ оплаты и&nbsp;подсветка NFC-зоны снизят число лишних действий.</p></article>
+          <article class="reveal"><span>02 · Скорость</span><h3>Лишние подтверждения и&nbsp;текст замедляют очередь.</h3><p>Гипотеза: принцип «один экран — одно действие» сократит сценарий.</p></article>
+          <article class="reveal"><span>03 · Ошибки</span><h3>Технический код не&nbsp;объясняет причину и&nbsp;следующий шаг.</h3><p>Гипотеза: короткое пояснение и&nbsp;кнопка повтора помогут завершить больше операций.</p></article>
+          <article class="reveal"><span>04 · Доступность</span><h3>Мелкий текст и&nbsp;статусы только цветом исключают часть аудитории.</h3><p>Гипотеза: крупный контрастный текст, иконка, звук и&nbsp;RU/EN сделают сценарий понятнее.</p></article>
+        </div>
+      </section>
+
+      <section class="vtb-ux vtb-section" id="ux">
+        <div class="vtb-section-label reveal"><span>06</span><p>UX-структура</p></div>
+        <div class="vtb-ux-head reveal"><h2>Три сценария. Одна точка входа.</h2><p>Все способы оплаты начинаются на&nbsp;экране «Готов к&nbsp;оплате» и&nbsp;сходятся в&nbsp;общие состояния обработки, успеха или ошибки.</p></div>
+        <div class="vtb-scenarios">
+          <article class="primary reveal"><span>Основной</span><b>01</b><h3>Карта или NFC</h3><p>Массовый сценарий для&nbsp;карты, телефона, часов и&nbsp;платёжного стикера.</p></article>
+          <article class="reveal"><span>Альтернативный</span><b>02</b><h3>QR через СБП</h3><p>Пользователь сканирует код и&nbsp;завершает оплату на&nbsp;телефоне.</p></article>
+          <article class="reveal"><span>Альтернативный</span><b>03</b><h3>Оплата по&nbsp;лицу</h3><p>Камера помогает провести оплату без&nbsp;карты или&nbsp;телефона.</p></article>
+        </div>
+
+        <figure class="vtb-wide-figure reveal">
+          <figcaption><span>Карта экранов</span><p>Ошибка возвращает пользователя в&nbsp;сценарий, а&nbsp;не оставляет в&nbsp;тупике.</p></figcaption>
+          <div class="vtb-image-frame"><img src="assets/cases/vtb/flow-map.webp" alt="Карта экранов платёжного терминала" loading="lazy" /></div>
+        </figure>
+
+        <figure class="vtb-wide-figure reveal">
+          <figcaption><span>Вайрфреймы</span><p>Сначала проверила логику и&nbsp;иерархию, затем перешла к&nbsp;визуальному стилю.</p></figcaption>
+          <div class="vtb-image-frame"><img src="assets/cases/vtb/wireframes.webp" alt="Вайрфреймы семи экранов терминала" loading="lazy" /></div>
+        </figure>
+      </section>
+
+      <section class="vtb-decisions vtb-section">
+        <div class="vtb-section-label reveal"><span>07</span><p>Ключевые решения</p></div>
+        <div class="vtb-decisions-list">
+          <article class="reveal"><b>01</b><h3>Один экран — одно действие</h3><p>Без&nbsp;лишних подтверждений и&nbsp;промежуточных выборов.</p></article>
+          <article class="reveal"><b>02</b><h3>Оплата доступна сразу</h3><p>На&nbsp;первом экране уже есть NFC, QR и&nbsp;биометрия.</p></article>
+          <article class="reveal"><b>03</b><h3>PIN без&nbsp;лишней кнопки</h3><p>После четвёртой цифры код отправляется автоматически.</p></article>
+          <article class="reveal"><b>04</b><h3>Ошибка — не&nbsp;тупик</h3><p>Понятная причина и&nbsp;явное действие «Повторить».</p></article>
+          <article class="reveal"><b>05</b><h3>Статус не&nbsp;только цветом</h3><p>Текст, форма, 3D-иконка и&nbsp;звуковая обратная связь.</p></article>
+          <article class="reveal"><b>06</b><h3>NFC-зона заметна</h3><p>Подсветка и&nbsp;стрелка показывают, куда приложить карту.</p></article>
+        </div>
+      </section>
+
+      <section class="vtb-ui vtb-section" id="ui">
+        <div class="vtb-section-label reveal"><span>08</span><p>Визуальная система</p></div>
+        <div class="vtb-ui-head reveal"><h2>Спокойный фон. Яркая обратная связь.</h2><p>Для&nbsp;интерфейса выбрала тёмный синий градиент, белый текст, стеклянные поверхности и&nbsp;пластиковые 3D-объекты. Такая система сохраняет контраст и&nbsp;делает ключевой статус заметным.</p></div>
+        <div class="vtb-direction reveal">
+          <img src="assets/cases/vtb/visual-direction.webp" alt="Визуальное направление: тёмный градиент, стекломорфизм и 3D-иконки" loading="lazy" />
+          <div><span>Визуальный принцип</span><p>Декоративные эффекты не&nbsp;конкурируют с&nbsp;действием: главный текст и&nbsp;статус всегда остаются в&nbsp;центре внимания.</p></div>
+        </div>
+        <div class="vtb-system-grid">
+          <figure class="reveal"><figcaption>Цвета</figcaption><img src="assets/cases/vtb/colors.webp" alt="Палитра интерфейса" loading="lazy" /></figure>
+          <figure class="reveal"><figcaption>Типографика · Golos UI</figcaption><img src="assets/cases/vtb/typography.webp" alt="Типографическая система интерфейса" loading="lazy" /></figure>
+          <figure class="wide reveal"><figcaption>Компоненты</figcaption><img src="assets/cases/vtb/ui-elements.webp" alt="Компоненты и элементы интерфейса" loading="lazy" /></figure>
+        </div>
+        <div class="vtb-grid-system reveal">
+          <div><span>8 px</span><p>Шаг системы отступов</p></div>
+          <div><span>4 × 12</span><p>Основная сетка экрана</p></div>
+          <div><span>Safe zones</span><p>Учтены камера и&nbsp;скругления корпуса</p></div>
+        </div>
+        <div class="vtb-grid-images">
+          <img class="reveal" src="assets/cases/vtb/spacing.webp" alt="Система отступов" loading="lazy" />
+          <img class="reveal" src="assets/cases/vtb/grid.webp" alt="Сетка экрана" loading="lazy" />
+          <img class="reveal" src="assets/cases/vtb/pin-grid.webp" alt="Отдельная сетка экрана ввода PIN" loading="lazy" />
+        </div>
+      </section>
+
+      <section class="vtb-screens vtb-section" id="screens">
+        <div class="vtb-section-label reveal"><span>09</span><p>Финальные экраны</p></div>
+        <div class="vtb-screens-head reveal"><h2>Интерфейс по&nbsp;состояниям.</h2><p>Пользователь в&nbsp;каждый момент понимает: что происходит сейчас, что нужно сделать и&nbsp;чем завершилась операция.</p></div>
+
+        <div class="vtb-screen-feature reveal">
+          <div class="vtb-feature-copy"><span>Точка входа</span><h3>Готов к&nbsp;оплате</h3><p>Сумма и&nbsp;основной способ оплаты находятся в&nbsp;первом фокусе. QR и&nbsp;биометрия доступны на&nbsp;том же экране, без&nbsp;отдельного меню.</p></div>
+          <div class="vtb-device-pair">
+            <figure><img src="assets/cases/vtb/screen-ready-qr.webp" alt="Экран «Готов к оплате» с QR и кнопкой оплаты лицом" loading="lazy" /><figcaption>С&nbsp;универсальной иконкой</figcaption></figure>
+            <figure><img src="assets/cases/vtb/screen-ready-face.webp" alt="Вариант экрана «Готов к оплате» с 3D-персонажем" loading="lazy" /><figcaption>Вариант с 3D-подсказкой</figcaption></figure>
+          </div>
+        </div>
+
+        <div class="vtb-screen-gallery states">
+          <figure class="reveal"><span>01 · Ожидание</span><img src="assets/cases/vtb/screen-idle.webp" alt="Экран свободного терминала" loading="lazy" /><figcaption>Терминал свободен</figcaption></figure>
+          <figure class="reveal"><span>02 · Безопасность</span><img src="assets/cases/vtb/screen-pin.webp" alt="Экран ввода PIN" loading="lazy" /><figcaption>Введите PIN</figcaption></figure>
+          <figure class="reveal"><span>03 · Биометрия</span><img src="assets/cases/vtb/screen-face.webp" alt="Экран оплаты по лицу" loading="lazy" /><figcaption>Смотрите в&nbsp;камеру</figcaption></figure>
+          <figure class="reveal"><span>04 · Ошибка считывания</span><img src="assets/cases/vtb/screen-card-error.webp" alt="Экран ошибки считывания карты с подсказкой повторить действие" loading="lazy" /><figcaption>Приложите карту ещё раз</figcaption></figure>
+        </div>
+
+        <div class="vtb-feedback-title reveal"><p class="vtb-kicker">Обратная связь</p><h3>Статус виден с&nbsp;первого взгляда</h3></div>
+        <div class="vtb-screen-gallery feedback">
+          <figure class="reveal"><span>В&nbsp;процессе</span><img src="assets/cases/vtb/screen-processing.webp" alt="Экран обработки платежа" loading="lazy" /><figcaption>Платёж обрабатывается</figcaption></figure>
+          <figure class="reveal"><span>Ошибка + действие</span><img src="assets/cases/vtb/screen-failed.webp" alt="Экран неуспешной оплаты с кнопкой повтора" loading="lazy" /><figcaption>Недостаточно средств · Повторить</figcaption></figure>
+          <figure class="reveal"><span>Успех</span><img src="assets/cases/vtb/screen-success.webp" alt="Экран успешной оплаты" loading="lazy" /><figcaption>Оплата прошла</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="vtb-three-d vtb-section">
+        <div class="vtb-section-label reveal"><span>10</span><p>3D и&nbsp;визуализация</p></div>
+        <div class="vtb-three-d-head reveal"><h2>Не&nbsp;только экраны.</h2><p>Чтобы проверить интерфейс в&nbsp;контексте реального объекта, я&nbsp;смоделировала терминал и&nbsp;набор статусных иконок в&nbsp;Blender.</p></div>
+        <div class="vtb-model-grid">
+          <figure class="reveal"><img src="assets/cases/vtb/model-process.webp" alt="Процесс моделирования терминала в Blender" loading="lazy" /><figcaption>Модель терминала</figcaption></figure>
+          <div class="vtb-icon-grid">
+            <figure class="reveal"><img src="assets/cases/vtb/icon-idle.webp" alt="3D-иконка для свободного терминала" loading="lazy" /><figcaption>Свободен</figcaption></figure>
+            <figure class="reveal"><img src="assets/cases/vtb/icon-loading.webp" alt="3D-индикатор загрузки" loading="lazy" /><figcaption>Обработка</figcaption></figure>
+            <figure class="reveal"><img src="assets/cases/vtb/icon-success.webp" alt="3D-галочка успешной оплаты" loading="lazy" /><figcaption>Успех</figcaption></figure>
+            <figure class="reveal"><img src="assets/cases/vtb/icon-failed.webp" alt="3D-крест ошибки оплаты" loading="lazy" /><figcaption>Ошибка</figcaption></figure>
+          </div>
+        </div>
+        <figure class="vtb-final-render reveal"><img src="assets/cases/vtb/hero-render.webp" alt="Финальный 3D-рендер концепции платёжного терминала" loading="lazy" /><figcaption>Финальный рендер с&nbsp;интерфейсом</figcaption></figure>
+      </section>
+
+      <section class="vtb-outcome vtb-section" id="result">
+        <div class="vtb-section-label reveal"><span>11</span><p>Итоги</p></div>
+        <div class="vtb-outcome-head reveal"><h2>Что получилось и&nbsp;что дальше.</h2><p>Кейс помог пройти полный путь от&nbsp;продуктовой постановки до&nbsp;визуализации интерфейса в&nbsp;реальном устройстве.</p></div>
+        <div class="vtb-outcome-grid">
+          <article class="reveal"><span>Собрано</span><h3>Цельная UX-логика</h3><p>Карта состояний покрывает основной и&nbsp;альтернативные способы оплаты, PIN, ожидание, успех и&nbsp;ошибку.</p></article>
+          <article class="reveal"><span>Собрано</span><h3>Масштабируемая UI-система</h3><p>Компоненты, стили, сетки и&nbsp;правила позволяют добавлять новые способы оплаты без&nbsp;перестройки сценария.</p></article>
+          <article class="reveal"><span>Собрано</span><h3>Контекстная визуализация</h3><p>3D-модель показала, как экран, камера и&nbsp;NFC-зона работают как&nbsp;одно устройство.</p></article>
+        </div>
+        <div class="vtb-next-steps reveal">
+          <p class="vtb-kicker">Следующие шаги</p>
+          <ol><li><span>01</span>Провести usability-тесты с&nbsp;молодыми и&nbsp;пожилыми пользователями.</li><li><span>02</span>Проверить читаемость, время сценария и&nbsp;доступность на&nbsp;реальном экране.</li><li><span>03</span>Протестировать задержки сети, ошибочные действия и&nbsp;нестабильную работу камеры.</li></ol>
+        </div>
+      </section>
+
+      <nav class="case-nav" aria-label="Навигация между кейсами">
+        <a href="case.html?id=estate"><span>← Предыдущий кейс</span><b>Агентство недвижимости</b></a>
+        <a href="case-cosmetics.html"><span>Следующий кейс →</span><b>Интернет-магазин косметики</b></a>
+      </nav>
+    </main>
+  </body>
+</html>

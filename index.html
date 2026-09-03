@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Портфолио продуктового дизайнера Владиславы Задорожной: продуктовые и веб-кейсы, подход к работе и резюме." />
+    <meta name="theme-color" content="#0b0b0b" />
+    <title>Владислава Задорожная — продуктовый дизайнер</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=13" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="home-body">
+    <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+    <svg class="outline-filter-defs" width="0" height="0" aria-hidden="true" focusable="false">
+      <defs>
+        <filter id="clean-outline-light" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+          <feMorphology in="SourceAlpha" operator="dilate" radius="1.4" result="expanded" />
+          <feComposite in="expanded" in2="SourceAlpha" operator="out" result="outline" />
+          <feFlood flood-color="#f4f3ef" result="outline-color" />
+          <feComposite in="outline-color" in2="outline" operator="in" />
+        </filter>
+        <filter id="clean-outline-dark" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+          <feMorphology in="SourceAlpha" operator="dilate" radius="1.4" result="expanded" />
+          <feComposite in="expanded" in2="SourceAlpha" operator="out" result="outline" />
+          <feFlood flood-color="#0a0a0a" result="outline-color" />
+          <feComposite in="outline-color" in2="outline" operator="in" />
+        </filter>
+      </defs>
+    </svg>
+
+    <header class="site-header" data-header>
+      <a class="logo" href="index.html" aria-label="На главную"><img src="assets/images/logo.svg" alt="" /></a>
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a href="#projects">Кейсы</a>
+        <a href="#about">Обо мне</a>
+        <a href="resume.html">Резюме</a>
+      </nav>
+      <a class="header-contact" href="#contact">Написать <span aria-hidden="true">↗</span></a>
+      <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false" data-menu-button>
+        <span></span><span></span>
+      </button>
+      <nav class="mobile-menu" aria-label="Мобильная навигация" data-mobile-menu>
+        <a href="#projects">Кейсы</a>
+        <a href="#about">Обо мне</a>
+        <a href="resume.html">Резюме</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title" data-spotlight>
+        <div class="hero-noise" aria-hidden="true"></div>
+        <div class="hero-meta">
+          <p><span class="status-dot"></span> Открыта к&nbsp;стажировке</p>
+          <p>Санкт-Петербург · 2026</p>
+        </div>
+
+        <div class="hero-title-wrap">
+          <p class="hero-name">Владислава Задорожная</p>
+          <h1 id="hero-title">PRODUCT<br /><span class="outline-line">DESIGNER</span></h1>
+        </div>
+
+        <div class="hero-portrait" aria-hidden="true">
+          <div class="portrait-orbit orbit-one"></div>
+          <div class="portrait-orbit orbit-two"></div>
+          <div class="portrait-pink"></div>
+          <img src="assets/images/vladislava-cutout.webp" alt="" />
+          <span class="portrait-sticker">PRODUCT<br />DESIGN</span>
+        </div>
+
+        <div class="hero-bottom">
+          <p class="hero-intro">Проектирую интерфейсы, в&nbsp;которых визуал опирается на&nbsp;логику, исследование и&nbsp;понятный пользовательский сценарий.</p>
+          <a class="round-link" href="#projects" aria-label="Смотреть проекты"><span>↓</span></a>
+        </div>
+      </section>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>ИССЛЕДОВАНИЕ</span><i>✳</i><span>ГИПОТЕЗЫ</span><i>✳</i><span>СЦЕНАРИИ</span><i>✳</i><span>ИНТЕРФЕЙС</span><i>✳</i>
+          <span>ИССЛЕДОВАНИЕ</span><i>✳</i><span>ГИПОТЕЗЫ</span><i>✳</i><span>СЦЕНАРИИ</span><i>✳</i><span>ИНТЕРФЕЙС</span><i>✳</i>
+        </div>
+      </div>
+
+      <section class="projects section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading reveal">
+          <p class="section-index" id="projects-title">01 / Selected work</p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card project-card--featured reveal">
+            <a class="project-link" href="case-vtb.html" aria-label="Открыть кейс об интерфейсе платёжного терминала">
+              <div class="project-copy">
+                <div class="project-number">01</div>
+                <p class="project-type">Продуктовый дизайн · ВТБ · 2025</p>
+                <h3>Платёжный<br />терминал</h3>
+                <p class="project-description">Сценарий оплаты и&nbsp;интерфейс терминала самообслуживания с&nbsp;фокусом на&nbsp;понятность и&nbsp;скорость.</p>
+                <div class="tag-row"><span>UX research</span><span>User flow</span><span>UI system</span><span>3D</span></div>
+              </div>
+              <div class="terminal-stage" aria-hidden="true">
+                <div class="project-terminal-glow"></div>
+                <img class="project-terminal-render" src="assets/cases/vtb/composition-transparent.webp" alt="" />
+              </div>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="project-card project-card--cosmetics reveal">
+            <a class="project-link" href="case-cosmetics.html" aria-label="Открыть кейс интернет-магазина косметики">
+              <div class="project-copy">
+                <div class="project-number">02</div>
+                <p class="project-type">E-commerce · Учебный проект · 2025</p>
+                <h3>Интернет-магазин<br />косметики</h3>
+                <p class="project-description">Многостраничный магазин, собранный на&nbsp;переиспользуемых компонентах и&nbsp;единой логике.</p>
+                <div class="tag-row"><span>Архитектура</span><span>UI kit</span><span>Компоненты</span><span>Handoff</span></div>
+              </div>
+              <div class="browser-mock browser-mock--shop" aria-hidden="true">
+                <div class="browser-bar"><i></i><i></i><i></i><span>Главная страница</span></div>
+                <img class="project-shop-image" src="assets/cases/cosmetics/hero-frame-86.webp" alt="" />
+                <div class="project-shop-caption"><b>ФИНАЛЬНЫЙ ИНТЕРФЕЙС</b><span>DESKTOP</span></div>
+              </div>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <div class="project-grid project-grid--single">
+            <article class="project-card project-card--estate reveal">
+              <a class="project-link" href="case.html?id=estate" aria-label="Открыть кейс лендинга агентства недвижимости">
+                <div class="project-copy">
+                  <div class="project-number">03</div>
+                  <p class="project-type">Лендинг · Фриланс · 2025</p>
+                  <h3>Агентство<br />недвижимости</h3>
+                  <div class="tag-row"><span>Структура</span><span>Адаптив</span><span>Tilda</span></div>
+                </div>
+                <div class="estate-visual" aria-hidden="true"><span>01</span><b>НАЙТИ<br />СВОЁ МЕСТО</b><i>→</i></div>
+                <span class="card-arrow" aria-hidden="true">↗</span>
+              </a>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="statement section" aria-label="Принцип работы">
+        <p class="section-index reveal">02 / Подход</p>
+        <div class="statement-copy reveal">
+          <p>НЕ РИСУЮ</p>
+          <p class="statement-indent">ЭКРАНЫ</p>
+          <p>В ВАКУУМЕ<span class="pink-dot">.</span></p>
+        </div>
+        <div class="statement-note reveal">
+          <span>Смотрю на задачу как на систему</span>
+          <p>Кто пользователь? Где он ошибается? Что мешает пройти сценарий? И только потом — как должен выглядеть экран.</p>
+        </div>
+      </section>
+
+      <section class="process section">
+        <div class="process-head reveal">
+          <h2>От вопроса<br />к решению</h2>
+          <p>Процесс меняется под задачу, но логика остаётся: понять, сформулировать, проверить, собрать.</p>
+        </div>
+        <ol class="process-list">
+          <li class="reveal"><span>01</span><div><h3>Понимаю контекст</h3><p>Изучаю аудиторию, конкурентов и ограничения. Ищу не симптом, а причину проблемы.</p></div></li>
+          <li class="reveal"><span>02</span><div><h3>Строю сценарий</h3><p>Формулирую гипотезы, собираю user flow и определяю точки, где решение должно помочь.</p></div></li>
+          <li class="reveal"><span>03</span><div><h3>Проверяю рано</h3><p>Делаю вайрфреймы и прототипы, чтобы быстрее увидеть слабые места логики.</p></div></li>
+          <li class="reveal"><span>04</span><div><h3>Собираю систему</h3><p>Прорабатываю интерфейс, состояния и компоненты. Готовлю решение к передаче в разработку.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="about section" id="about" aria-labelledby="about-title">
+        <div class="about-photo reveal">
+          <img src="assets/images/vladislava-portrait.webp" alt="Владислава Задорожная" loading="lazy" />
+          <span>Это я ↑</span>
+        </div>
+        <div class="about-copy reveal">
+          <p class="section-index">03 / Обо мне</p>
+          <h2 id="about-title">Привет!<br />Я Влада.</h2>
+          <p class="about-lead">Учусь в ИТМО и развиваюсь в продуктовом дизайне. Мне нравятся задачи, где визуал нельзя отделить от структуры и логики.</p>
+          <p>Работала над учебными и фриланс-проектами: от исследования и интерфейса платёжного терминала до многостраничного интернет-магазина. Сейчас ищу стажировку в продуктовой команде, где смогу расти на реальных задачах.</p>
+          <a class="text-link" href="resume.html">Посмотреть резюме <span>↗</span></a>
+        </div>
+        <div class="about-facts reveal">
+          <div><span>База</span><b>Санкт-Петербург</b></div>
+          <div><span>Образование</span><b>ИТМО · 4 курс</b></div>
+          <div><span>Фокус</span><b>Продуктовый дизайн</b></div>
+          <div><span>Английский</span><b>B1 · Intermediate</b></div>
+        </div>
+      </section>
+
+      <section class="credentials section" aria-labelledby="credentials-title">
+        <div class="credentials-head reveal">
+          <p class="section-index">04 / Обучение</p>
+          <h2 id="credentials-title">Любопытство<br />тоже навык<span class="pink-dot">.</span></h2>
+        </div>
+        <div class="credential-cards">
+          <a class="credential-card reveal" href="assets/docs/vtb-product-design-certificate.png" target="_blank" rel="noreferrer">
+            <div class="credential-meta"><span>2025 · ВТБ</span><img class="credential-logo credential-logo--vtb" src="assets/images/credentials/vtb-cutout.png" alt="" /></div>
+            <h3><span class="credential-title-line">Погружение в компетенции</span><br />продуктового дизайнера</h3><b>Сертификат ↗</b>
+          </a>
+          <a class="credential-card reveal" href="assets/docs/alfa-camp-diploma.pdf" target="_blank" rel="noreferrer">
+            <div class="credential-meta"><span>2026 · Альфа-Банк</span><img class="credential-logo credential-logo--alfa" src="assets/images/credentials/alfa-bank.png" alt="" /></div>
+            <h3>Участница<br />базового лагеря</h3><b>Диплом ↗</b>
+          </a>
+          <a class="credential-card reveal" href="assets/docs/alfa-future-championship.pdf" target="_blank" rel="noreferrer">
+            <div class="credential-meta"><span>2026 · Альфа-Будущее</span><img class="credential-logo credential-logo--future" src="assets/images/credentials/alfa-future-cutout.png" alt="" /></div>
+            <h3>Участница чемпионата</h3><b>Диплом ↗</b>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-top reveal"><p class="section-index">05 / Контакты</p><span>Есть задача или стажировка?</span></div>
+        <h2 id="contact-title" class="reveal">ДАВАЙТЕ<br /><span class="outline-line">ЗНАКОМИ<span class="outline-glyph-fix">Т</span>ЬСЯ</span><i>↗</i></h2>
+        <div class="contact-links reveal">
+          <a href="mailto:globusmir12@gmail.com">globusmir12@gmail.com</a>
+          <a href="https://t.me/williams_designer" target="_blank" rel="noreferrer">Telegram</a>
+          <a href="tel:+79811231377">+7 981 123-13-77</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="logo" href="#main" aria-label="Наверх"><img src="assets/images/logo.svg" alt="" /></a>
+      <p>Владислава Задорожная · Product designer</p>
+      <a href="#main">Наверх ↑</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="description" content="Кейс из портфолио продуктового дизайнера Владиславы Задорожной." />
+    <title>Кейс — Владислава Задорожная</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=11" />
+    <script src="script.js" defer></script>
+    <script src="case.js?v=2" defer></script>
+  </head>
+  <body class="case-body">
+    <header class="site-header" data-header>
+      <a class="logo" href="index.html" aria-label="На главную"><img src="assets/images/logo.svg" alt="" /></a>
+      <nav class="desktop-nav" aria-label="Основная навигация"><a href="index.html#projects">Кейсы</a><a href="index.html#about">Обо мне</a><a href="resume.html">Резюме</a></nav>
+      <a class="header-contact" href="index.html#contact">Написать <span>↗</span></a>
+      <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false" data-menu-button><span></span><span></span></button>
+      <nav class="mobile-menu" data-mobile-menu><a href="index.html#projects">Кейсы</a><a href="index.html#about">Обо мне</a><a href="resume.html">Резюме</a><a href="index.html#contact">Контакты</a></nav>
+    </header>
+    <main>
+      <section class="case-hero">
+        <a class="case-back" href="index.html#projects">← Все кейсы</a>
+        <h1 class="case-title" data-case-title></h1>
+        <p class="case-subtitle" data-case-subtitle></p>
+        <div class="case-poster" aria-hidden="true"><strong data-case-poster></strong><span data-case-index></span></div>
+      </section>
+      <section class="case-overview section">
+        <div class="overview-grid reveal">
+          <h2>Коротко<br />о проекте</h2>
+          <div class="overview-copy">
+            <p data-case-overview></p>
+            <div class="case-facts">
+              <div><span>Формат</span><b data-case-format></b></div>
+              <div><span>Год</span><b data-case-year></b></div>
+              <div><span>Роль</span><b>UX/UI-дизайнер</b></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="placeholder-process section">
+        <div class="placeholder-head reveal"><h2>Проблема.<br />Контекст.<br />Решение.</h2><p>Именно по этой логике здесь будет собран полный рассказ: кратко, с аргументами и большим количеством визуальных материалов.</p></div>
+        <div class="placeholder-steps">
+          <article class="placeholder-step reveal"><span>01</span><h3>Проблема</h3><p>Что не работает в текущем сценарии и почему это важно для пользователя и продукта.</p></article>
+          <article class="placeholder-step reveal"><span>02</span><h3>Контекст</h3><p>Исследование, ограничения, гипотезы, пользовательский путь и ключевые решения.</p></article>
+          <article class="placeholder-step reveal"><span>03</span><h3>Решение</h3><p>Финальный интерфейс, проверка сценария, результат и выводы из проекта.</p></article>
+        </div>
+      </section>
+      <section class="case-coming section reveal">
+        <h2>КЕЙС<br />ГОТОВИТСЯ<span class="pink-dot">.</span></h2>
+        <p>Сейчас это аккуратная страница-заглушка. Она уже показывает место будущего кейса, не выдавая придуманные детали за реальный процесс.</p>
+      </section>
+      <nav class="case-nav" aria-label="Навигация между кейсами"><a data-prev-link><span>← Предыдущий кейс</span><b data-prev-title></b></a><a data-next-link><span>Следующий кейс →</span><b data-next-title></b></a></nav>
+    </main>
+  </body>
+</html>

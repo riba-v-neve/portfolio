@@ -1,0 +1,9 @@
+{
+  "name": "vladislava-product-design-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "python3 -m http.server 5173",
+    "start": "python3 -m http.server 5173"
+  }
+}
