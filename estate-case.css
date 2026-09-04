@@ -27,9 +27,9 @@
   display: grid;
   grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
   align-items: center;
-  gap: 4vw;
+  gap: min(4vw, 58px);
   min-height: 100svh;
-  padding: 128px var(--pad) 48px;
+  padding: 128px var(--page-pad) 48px;
   background:
     radial-gradient(circle at 86% 18%, rgba(23, 132, 56, .2), transparent 28%),
     linear-gradient(135deg, #fff 0%, var(--estate-mint) 62%, #e9f8eb 100%);
@@ -45,8 +45,8 @@
   border: 1px solid rgba(23, 132, 56, .13);
   border-radius: 50%;
 }
-.estate-hero::before { top: -18vw; right: -8vw; width: 48vw; aspect-ratio: 1; }
-.estate-hero::after { right: 14vw; bottom: -22vw; width: 38vw; aspect-ratio: 1; }
+.estate-hero::before { top: max(-18vw, -259px); right: max(-8vw, -115px); width: min(48vw, 691px); aspect-ratio: 1; }
+.estate-hero::after { right: min(14vw, 202px); bottom: max(-22vw, -317px); width: min(38vw, 547px); aspect-ratio: 1; }
 
 .estate-hero-copy { position: relative; z-index: 2; min-width: 0; }
 .estate-back {
@@ -158,7 +158,7 @@
   display: flex;
   justify-content: center;
   gap: 3px;
-  padding: 8px var(--pad);
+  padding: 8px var(--page-pad);
   color: #edf7ef;
   background: rgba(15, 17, 19, .9);
   border-bottom: 1px solid rgba(255, 255, 255, .15);
@@ -167,7 +167,7 @@
 .estate-anchor-nav a { padding: 9px 14px; border-radius: 100px; font-size: 11px; }
 .estate-anchor-nav a:hover { color: #fff; background: var(--estate-green); }
 
-.estate-section { padding: clamp(95px, 11vw, 165px) var(--pad); }
+.estate-section { padding: clamp(95px, 11vw, 165px) var(--page-pad); }
 .estate-section-label {
   width: max-content;
   margin-bottom: clamp(65px, 8vw, 110px);
@@ -183,7 +183,7 @@
 .estate-launch-head {
   display: grid;
   grid-template-columns: 1.2fr .8fr;
-  gap: 8vw;
+  gap: min(8vw, 115px);
   align-items: end;
 }
 .estate-overview-head > *,
@@ -262,9 +262,9 @@
 .estate-showcase {
   display: grid;
   grid-template-columns: .8fr 1.2fr;
-  gap: 6vw;
+  gap: min(6vw, 86px);
   align-items: center;
-  padding: clamp(95px, 11vw, 165px) var(--pad);
+  padding: clamp(95px, 11vw, 165px) var(--page-pad);
   background: var(--estate-mint);
 }
 .estate-showcase-copy > p:first-child,
@@ -303,7 +303,7 @@
 .estate-adaptive {
   display: grid;
   grid-template-columns: 1fr .7fr;
-  gap: 9vw;
+  gap: min(9vw, 130px);
   align-items: center;
   color: #fff;
   background: var(--estate-ink);
@@ -331,7 +331,7 @@
 .estate-result-grid span { color: var(--estate-green); font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .09em; }
 .estate-result-grid h3 { margin: 145px 0 15px; font-family: var(--display-font); font-size: clamp(23px, 2.6vw, 39px); line-height: .98; }
 .estate-result-grid p { max-width: 360px; margin: 0; color: #555c57; }
-.estate-final-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 5vw; align-items: center; margin-top: 100px; }
+.estate-final-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: min(5vw, 72px); align-items: center; margin-top: 100px; }
 .estate-final-screen { margin: 0; padding: 16px; background: #fff; border-radius: 24px; box-shadow: 0 24px 55px rgba(15, 54, 27, .1); }
 .estate-final-screen img { width: 100%; border-radius: 14px; }
 .estate-final-copy p { max-width: 550px; margin: 0 0 35px; color: #444b46; font-size: clamp(18px, 1.8vw, 24px); }

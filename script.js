@@ -43,6 +43,35 @@ if (spotlight && window.matchMedia('(pointer: fine)').matches) {
   });
 }
 
+const tickerTrack = document.querySelector('.ticker-track');
+const tickerGroup = tickerTrack?.querySelector('[data-ticker-group]');
+
+if (tickerTrack && tickerGroup) {
+  const baseItems = tickerGroup.innerHTML;
+  const duplicateGroup = tickerTrack.querySelector('.ticker-group[aria-hidden="true"]');
+  let tickerResizeFrame;
+
+  const fillTicker = () => {
+    tickerGroup.innerHTML = baseItems;
+
+    while (tickerGroup.scrollWidth < window.innerWidth * 1.15) {
+      tickerGroup.insertAdjacentHTML('beforeend', baseItems);
+    }
+
+    if (duplicateGroup) duplicateGroup.innerHTML = tickerGroup.innerHTML;
+    tickerTrack.style.setProperty('--ticker-duration', `${Math.max(26, tickerGroup.scrollWidth / 45)}s`);
+  };
+
+  const scheduleTickerFill = () => {
+    cancelAnimationFrame(tickerResizeFrame);
+    tickerResizeFrame = requestAnimationFrame(fillTicker);
+  };
+
+  window.addEventListener('resize', scheduleTickerFill, { passive: true });
+  fillTicker();
+  document.fonts?.ready.then(fillTicker);
+}
+
 const header = document.querySelector('[data-header]');
 let previousScroll = window.scrollY;
 window.addEventListener('scroll', () => {
