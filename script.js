@@ -51,3 +51,103 @@ window.addEventListener('scroll', () => {
   header.classList.toggle('header-hidden', currentScroll > previousScroll && currentScroll > 180);
   previousScroll = currentScroll;
 }, { passive: true });
+
+const screenMarquee = document.querySelector('[data-screen-marquee]');
+
+if (screenMarquee) {
+  const track = screenMarquee.querySelector('.vtb-quick-screens');
+  const originals = Array.from(track.children);
+  const originalCount = originals.length;
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let offset = 0;
+  let cycleWidth = 0;
+  let lastFrame = performance.now();
+  let lastPointerX = 0;
+  let isDragging = false;
+  let isVisible = true;
+
+  originals.forEach((item) => {
+    const clone = item.cloneNode(true);
+    clone.setAttribute('aria-hidden', 'true');
+    track.appendChild(clone);
+  });
+
+  const normalizeOffset = () => {
+    if (!cycleWidth) return;
+    while (offset <= -cycleWidth) offset += cycleWidth;
+    while (offset > 0) offset -= cycleWidth;
+  };
+
+  const render = () => {
+    track.style.transform = `translate3d(${offset}px, 0, 0)`;
+  };
+
+  const measure = () => {
+    const firstClone = track.children[originalCount];
+    cycleWidth = firstClone ? firstClone.offsetLeft - track.children[0].offsetLeft : 0;
+    normalizeOffset();
+    render();
+  };
+
+  const stopDragging = (event) => {
+    if (!isDragging) return;
+    isDragging = false;
+    screenMarquee.classList.remove('is-dragging');
+    if (event && screenMarquee.hasPointerCapture(event.pointerId)) {
+      screenMarquee.releasePointerCapture(event.pointerId);
+    }
+    lastFrame = performance.now();
+  };
+
+  screenMarquee.addEventListener('pointerdown', (event) => {
+    if (event.button !== undefined && event.button !== 0) return;
+    isDragging = true;
+    lastPointerX = event.clientX;
+    screenMarquee.classList.add('is-dragging');
+    screenMarquee.setPointerCapture(event.pointerId);
+  });
+
+  screenMarquee.addEventListener('pointermove', (event) => {
+    if (!isDragging) return;
+    offset += event.clientX - lastPointerX;
+    lastPointerX = event.clientX;
+    normalizeOffset();
+    render();
+  });
+
+  screenMarquee.addEventListener('pointerup', stopDragging);
+  screenMarquee.addEventListener('pointercancel', stopDragging);
+
+  screenMarquee.addEventListener('keydown', (event) => {
+    if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+    event.preventDefault();
+    offset += event.key === 'ArrowLeft' ? 80 : -80;
+    normalizeOffset();
+    render();
+    lastFrame = performance.now();
+  });
+
+  if ('IntersectionObserver' in window) {
+    const marqueeObserver = new IntersectionObserver(([entry]) => {
+      isVisible = entry.isIntersecting;
+      lastFrame = performance.now();
+    });
+    marqueeObserver.observe(screenMarquee);
+  }
+
+  const animate = (time) => {
+    const elapsed = Math.min(time - lastFrame, 40);
+    lastFrame = time;
+    if (!isDragging && isVisible && !reducedMotion.matches) {
+      offset -= elapsed * 0.018;
+      normalizeOffset();
+      render();
+    }
+    requestAnimationFrame(animate);
+  };
+
+  window.addEventListener('resize', measure, { passive: true });
+  window.addEventListener('load', measure, { once: true });
+  measure();
+  requestAnimationFrame(animate);
+}

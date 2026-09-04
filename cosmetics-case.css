@@ -195,6 +195,54 @@
 .shop-outcome-grid h3 { margin: 140px 0 15px; font-family: var(--display-font); font-size: clamp(24px, 2.6vw, 38px); line-height: .98; }
 .shop-outcome-grid p { max-width: 350px; margin: 0; color: #56534d; }
 
+/* Editorial case flow: short text blocks alternate with real project materials. */
+.shop-case-figure {
+  margin: 80px 0 0;
+  padding: 22px;
+  background: #e7e3eb;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.shop-case-figure img {
+  display: block;
+  width: 100%;
+  border-radius: 15px;
+}
+.shop-case-figure figcaption {
+  max-width: 720px;
+  margin-top: 16px;
+  color: #625e66;
+  font-size: 13px;
+  line-height: 1.45;
+}
+.shop-case-figure--light { background: #efedf2; }
+.shop-case-figure--light img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+.shop-case-figure--dark { margin: 0; background: #171422; }
+.shop-case-figure--dark figcaption { color: #bbb3c8; }
+.shop-case-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 80px;
+}
+.shop-case-gallery .shop-case-figure { margin: 0; }
+.shop-case-gallery--system .shop-case-figure img {
+  height: 620px;
+  object-fit: cover;
+  object-position: top;
+}
+.shop-screen-card > .shop-screen-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.shop-handoff-list li { grid-template-columns: 1fr; }
+.shop-outcome-grid { margin-top: 80px; }
+
 @media (max-width: 1050px) {
   .shop-hero { grid-template-columns: 1fr; padding-top: 120px; }
   .shop-hero-copy { max-width: 760px; }
@@ -202,8 +250,9 @@
   .shop-hero::before { width: 65vw; }
   .shop-overview-head,
   .shop-split-head,
-  .shop-handoff-head { grid-template-columns: 1fr; gap: 30px; }
+  .shop-handoff-head { grid-template-columns: minmax(0, 1fr); gap: 30px; }
   .shop-system-grid { grid-template-columns: 1fr; }
+  .shop-case-gallery { grid-template-columns: 1fr; }
   .shop-handoff-layout { grid-template-columns: 1fr; }
 }
 
@@ -221,7 +270,7 @@
   .shop-section-label { margin-bottom: 48px; }
   .shop-overview-head h2,
   .shop-split-head h2,
-  .shop-handoff-head h2 { font-size: clamp(37px, 11vw, 52px); line-height: .96; }
+  .shop-handoff-head h2 { max-width: 100%; font-size: clamp(32px, 9.8vw, 46px); line-height: .96; }
   .shop-overview-head > p,
   .shop-split-head > p,
   .shop-handoff-head p { font-size: 16px; }
@@ -230,6 +279,11 @@
   .shop-facts div { min-height: 105px; border-bottom: 1px solid rgba(17,17,15,.22); }
   .shop-facts dd { margin-top: 30px; }
   .shop-visual { min-height: 500px; margin-top: 58px; border-radius: 17px; }
+  .shop-case-figure { margin-top: 55px; padding: 12px; border-radius: 17px; }
+  .shop-case-figure img { border-radius: 10px; }
+  .shop-case-gallery { gap: 10px; margin-top: 55px; }
+  .shop-case-gallery .shop-case-figure { margin: 0; }
+  .shop-case-gallery--system .shop-case-figure img { height: 460px; }
   .shop-visual--result { min-height: 540px; }
   .shop-mock-screens { inset: 75px 4% 105px; }
   .shop-mock-screens > i { width: 43%; }
@@ -254,9 +308,11 @@
   .shop-screen-card--wide { grid-column: auto; min-height: 480px; }
   .shop-screen-card > .shop-screen-media { height: 385px; }
   .shop-handoff-layout { margin-top: 55px; }
+  .shop-case-figure--dark { margin-top: 0; }
   .shop-handoff-layout .shop-visual { min-height: 510px; }
   .shop-outline-demo { inset: 80px 20px 145px; }
   .shop-outcome-grid { grid-template-columns: 1fr; }
+  .shop-outcome-grid { margin-top: 55px; }
   .shop-outcome-grid article { min-height: 265px; border-right: 0; border-bottom: 1px solid rgba(17,17,15,.25); }
   .shop-outcome-grid h3 { margin-top: 90px; }
 }
