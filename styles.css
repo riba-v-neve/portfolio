@@ -478,6 +478,17 @@ button { color: inherit; font: inherit; }
 .reveal { opacity: 0; transform: translateY(30px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.75,.25,1); }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
 
+@media (min-width: 1600px) and (min-height: 1100px) {
+  .home-body .hero,
+  .case-body .case-hero,
+  .vtb-body .vtb-hero,
+  .shop-body .shop-hero,
+  .estate-body .estate-hero {
+    height: 960px;
+    min-height: 960px;
+  }
+}
+
 /* Case page */
 .case-body { color: var(--white); background: var(--black); overflow-x: clip; }
 .case-body main { overflow: visible; }

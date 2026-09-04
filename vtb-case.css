@@ -454,7 +454,7 @@
   overflow: visible;
   border: 0;
   border-radius: 0;
-  background: radial-gradient(circle at 58% 60%, rgba(0,108,255,.3), transparent 55%);
+  background: transparent;
 }
 .vtb-hero-art img {
   top: auto;
