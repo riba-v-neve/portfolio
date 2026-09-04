@@ -69,7 +69,9 @@
 }
 
 .shop-browser-bar { display: flex; align-items: center; gap: 7px; height: 40px; padding: 0 16px; border-bottom: 1px solid #c9c5bd; font-size: 9px; text-transform: uppercase; letter-spacing: .08em; }
-.shop-browser-bar i { width: 7px; height: 7px; background: var(--shop-ink); border-radius: 50%; }
+.shop-browser-bar i { width: 7px; height: 7px; background: #ff5f57; border-radius: 50%; }
+.shop-browser-bar i:nth-child(2) { background: #febc2e; }
+.shop-browser-bar i:nth-child(3) { background: #28c840; }
 .shop-browser-bar span { margin-left: auto; color: #77736c; }
 .shop-browser-stage { position: relative; aspect-ratio: 3 / 2; background: #fff; overflow: hidden; }
 .shop-browser-image { display: block; width: 100%; height: 100%; object-fit: cover; }

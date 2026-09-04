@@ -3,57 +3,162 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0a0a0a" />
-    <meta name="description" content="Кейс из портфолио продуктового дизайнера Владиславы Задорожной." />
-    <title>Кейс — Владислава Задорожная</title>
+    <meta name="theme-color" content="#f4fff5" />
+    <meta name="description" content="Кейс Владиславы Задорожной: дизайн и запуск лендинга для агентства недвижимости на Tilda." />
+    <title>Лендинг агентства недвижимости — кейс Владиславы Задорожной</title>
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=29" />
+    <link rel="stylesheet" href="styles.css?v=38" />
+    <link rel="stylesheet" href="estate-case.css?v=7" />
     <script src="script.js" defer></script>
-    <script src="case.js?v=2" defer></script>
   </head>
-  <body class="case-body">
+  <body class="estate-body">
+    <a class="skip-link" href="#case-content">Перейти к&nbsp;кейсу</a>
+
     <header class="site-header" data-header>
       <a class="logo" href="index.html" aria-label="На главную"><img src="assets/images/logo.svg" alt="" /></a>
-      <nav class="desktop-nav" aria-label="Основная навигация"><a href="index.html#projects">Кейсы</a><a href="index.html#about">Обо мне</a><a href="resume.html">Резюме</a></nav>
+      <nav class="desktop-nav" aria-label="Основная навигация"><a href="index.html#projects">Кейсы</a><a href="index.html#about">Обо&nbsp;мне</a><a href="resume.html">Резюме</a></nav>
       <a class="header-contact" href="index.html#contact">Написать <span>↗</span></a>
       <button class="menu-button" type="button" aria-label="Открыть меню" aria-controls="mobile-menu" aria-expanded="false" data-menu-button><span></span><span></span></button>
     </header>
 
-    <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация" data-mobile-menu><a href="index.html#projects">Кейсы</a><a href="index.html#about">Обо мне</a><a href="resume.html">Резюме</a><a href="index.html#contact">Контакты</a></nav>
-    <main>
-      <section class="case-hero" id="top">
-        <a class="case-back" href="index.html#projects">← Все кейсы</a>
-        <h1 class="case-title" data-case-title></h1>
-        <p class="case-subtitle" data-case-subtitle></p>
-        <div class="case-poster" aria-hidden="true"><strong data-case-poster></strong><span data-case-index></span></div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация" data-mobile-menu><a href="index.html#projects">Кейсы</a><a href="index.html#about">Обо&nbsp;мне</a><a href="resume.html">Резюме</a><a href="index.html#contact">Контакты</a></nav>
+
+    <main id="case-content">
+      <section class="estate-hero">
+        <div class="estate-hero-copy">
+          <a class="estate-back" href="index.html#projects">← Все кейсы</a>
+          <p class="estate-kicker">Web design · Tilda · Фриланс · 2025</p>
+          <h1>САЙТ ДЛЯ<br />АГЕНТСТВА<br /><span>НЕДВИЖИМОСТИ</span></h1>
+          <p class="estate-hero-lead">Коммерческий лендинг под ключ: от&nbsp;визуальной концепции в&nbsp;Figma до&nbsp;адаптивной сборки, форм и&nbsp;запуска на&nbsp;собственном домене.</p>
+          <div class="estate-hero-actions">
+            <a class="estate-live-link" href="https://bestoffer-estate.ru/" target="_blank" rel="noopener noreferrer">Смотреть сайт <span>↗</span></a>
+            <div class="estate-tags"><span>Figma</span><span>Tilda</span><span>Zero Block</span><span>Адаптив</span></div>
+          </div>
+        </div>
+
+        <figure class="estate-hero-screen">
+          <div class="estate-browser-bar"><i></i><i></i><i></i><span>bestoffer-estate.ru</span></div>
+          <img src="assets/cases/estate/source-hero.jpg" alt="Главный экран сайта агентства недвижимости Бестоффер" />
+          <figcaption><b>ГОТОВЫЙ САЙТ</b><span>Desktop · финальная версия</span></figcaption>
+        </figure>
       </section>
-      <nav class="case-anchor-nav" aria-label="Навигация по кейсу"><a href="#overview">Обзор</a><a href="#process">Структура</a><a href="#status">Статус</a></nav>
-      <section class="case-overview section" id="overview">
-        <div class="overview-grid reveal">
-          <h2>Коротко<br />о проекте</h2>
-          <div class="overview-copy">
-            <p data-case-overview></p>
-            <div class="case-facts">
-              <div><span>Формат</span><b data-case-format></b></div>
-              <div><span>Год</span><b data-case-year></b></div>
-              <div><span>Роль</span><b>UX/UI-дизайнер</b></div>
-            </div>
+
+      <nav class="estate-anchor-nav" aria-label="Навигация по кейсу">
+        <a href="#overview">Обзор</a><a href="#task">Задача</a><a href="#work">Реализация</a><a href="#result">Результат</a>
+      </nav>
+
+      <section class="estate-section estate-overview" id="overview">
+        <div class="estate-section-label reveal"><p>Обзор</p></div>
+        <div class="estate-overview-head reveal">
+          <h2>ОТ ТЗ<br />ДО САЙТА<br /><span>ПОД КЛЮЧ.</span></h2>
+          <p>Заказчик пришёл с&nbsp;готовой структурой, текстами и&nbsp;логотипом. Я&nbsp;собрала из&nbsp;этих материалов цельный визуальный образ, перенесла макеты на&nbsp;Tilda и&nbsp;подготовила сайт к&nbsp;реальной работе.</p>
+        </div>
+        <dl class="estate-facts reveal">
+          <div><dt>Моя роль</dt><dd>Веб‑дизайнер<br />Tilda‑разработчик</dd></div>
+          <div><dt>Формат</dt><dd>Фриланс<br />коммерческий проект</dd></div>
+          <div><dt>Платформа</dt><dd>Tilda<br />Zero Block</dd></div>
+          <div><dt>Результат</dt><dd>Дизайн, сборка<br />и&nbsp;запуск</dd></div>
+        </dl>
+        <aside class="estate-note reveal">
+          <span>Фокус кейса</span>
+          <p>Это не&nbsp;продуктовая работа с&nbsp;исследованием: проект создавался по&nbsp;утверждённому ТЗ. Здесь главное&nbsp;— визуальная система, аккуратная реализация и&nbsp;полный технический запуск.</p>
+        </aside>
+      </section>
+
+      <section class="estate-section estate-task" id="task">
+        <div class="estate-section-label reveal"><p>Задача</p></div>
+        <div class="estate-split-head reveal">
+          <h2>ПРЕВРАТИТЬ<br />МАТЕРИАЛЫ<br />В&nbsp;ЦЕЛЬНЫЙ САЙТ.</h2>
+          <p>Структура и&nbsp;содержание блоков были заданы заранее. Нужно было найти характер бренда, оформить все разделы и&nbsp;довести проект до&nbsp;рабочего сайта.</p>
+        </div>
+        <div class="estate-task-grid">
+          <article class="reveal"><span>Визуал</span><h3>Задать узнаваемое направление</h3><p>Подобрать шрифты, цвета, характер изображений и&nbsp;правила оформления блоков.</p></article>
+          <article class="reveal"><span>Сборка</span><h3>Точно перенести дизайн</h3><p>Собрать утверждённые макеты в&nbsp;Zero Block и&nbsp;добавить нужное поведение элементов.</p></article>
+          <article class="reveal"><span>Запуск</span><h3>Подготовить сайт к&nbsp;работе</h3><p>Настроить адаптив, формы, домен и&nbsp;защищённое соединение.</p></article>
+        </div>
+      </section>
+
+      <section class="estate-showcase" aria-label="Визуальное направление сайта">
+        <div class="estate-showcase-copy reveal">
+          <p>Визуальное направление</p>
+          <h2>ДРУЖЕЛЮБНО,<br />ПОНЯТНО,<br /><span>БЕЗ ЛИШНЕЙ<br />СЕРЬЁЗНОСТИ.</span></h2>
+          <p class="estate-showcase-text">В основе&nbsp;— контрастная типографика, много воздуха, светло‑зелёные поверхности и&nbsp;фирменный персонаж. Иллюстрации помогают объяснять преимущества проще и&nbsp;делают агентство более человечным.</p>
+        </div>
+        <figure class="estate-showcase-image reveal">
+          <img src="assets/cases/estate/source-services.jpg" alt="Фрагмент сайта с фирменным персонажем и преимуществами агентства" loading="lazy" />
+          <figcaption>Фирменная графика поддерживает характер бренда и&nbsp;помогает объяснять преимущества.</figcaption>
+        </figure>
+      </section>
+
+      <section class="estate-section estate-work" id="work">
+        <div class="estate-section-label reveal"><p>Реализация</p></div>
+        <div class="estate-split-head reveal">
+          <h2>СНАЧАЛА<br />УТВЕРДИЛА<br />ВИЗУАЛ.</h2>
+          <p>Я&nbsp;полностью оформила блоки в&nbsp;Figma и&nbsp;показала заказчику будущий вид сайта. К&nbsp;сборке перешла после согласования концепции.</p>
+        </div>
+        <div class="estate-flow reveal" aria-label="Этапы реализации">
+          <span>Материалы и&nbsp;ТЗ</span><i>→</i><span>Визуальная концепция</span><i>→</i><span>Макеты в&nbsp;Figma</span><i>→</i><span>Согласование</span><i>→</i><span>Tilda</span>
+        </div>
+
+        <div class="estate-build-grid">
+          <article class="estate-build-card estate-build-card--green reveal">
+            <span>Zero Block</span>
+            <h3>Перенесла макеты на&nbsp;Tilda</h3>
+            <p>Собрала блоки вручную, сохранив композицию, типографику и&nbsp;визуальную иерархию утверждённого дизайна.</p>
+          </article>
+          <article class="estate-build-card estate-build-card--black reveal">
+            <span>Код и&nbsp;анимация</span>
+            <h3>Добавила нужную интерактивность</h3>
+            <p>Для отдельных функций и&nbsp;анимаций использовала кодовые блоки, когда возможностей стандартной сборки было недостаточно.</p>
+          </article>
+        </div>
+
+        <figure class="estate-wide-screen reveal">
+          <div class="estate-browser-bar"><i></i><i></i><i></i><span>Система контентных блоков</span></div>
+          <img src="assets/cases/estate/source-reviews.jpg" alt="Блоки с отзывами на сайте агентства недвижимости" loading="lazy" />
+          <figcaption>Большой объём контента собран в&nbsp;единой визуальной системе.</figcaption>
+        </figure>
+      </section>
+
+      <section class="estate-section estate-adaptive">
+        <div class="estate-adaptive-copy reveal">
+          <p class="estate-mini-label">Адаптив</p>
+          <h2>НЕ ПРОСТО<br />УМЕНЬШИЛА<br /><span>DESKTOP.</span></h2>
+          <p>После основной сборки я&nbsp;отдельно настроила композицию для&nbsp;мобильных устройств: перестроила блоки, проверила размеры текста, изображений и&nbsp;интерактивных элементов.</p>
+        </div>
+        <figure class="estate-phone reveal">
+          <div class="estate-phone-speaker"></div>
+          <img src="assets/cases/estate/source-mobile.jpg" alt="Мобильная версия главной страницы сайта агентства недвижимости" loading="lazy" />
+        </figure>
+      </section>
+
+      <section class="estate-section estate-launch" id="result">
+        <div class="estate-section-label reveal"><p>Результат</p></div>
+        <div class="estate-launch-head reveal">
+          <h2>САЙТ ГОТОВ<br />ПРИНИМАТЬ<br /><span>ЗАЯВКИ.</span></h2>
+          <p>В&nbsp;финале заказчик получил работающий адаптивный сайт, настроенный и&nbsp;опубликованный на&nbsp;собственном домене.</p>
+        </div>
+        <div class="estate-result-grid">
+          <article class="reveal"><span>Готово</span><h3>Desktop и&nbsp;мобильные версии</h3><p>Все основные блоки адаптированы под разные размеры экрана.</p></article>
+          <article class="reveal"><span>Настроено</span><h3>Формы для&nbsp;заявок</h3><p>Обращения с&nbsp;сайта поступают заказчику и&nbsp;не&nbsp;теряются.</p></article>
+          <article class="reveal"><span>Подключено</span><h3>Домен и&nbsp;HTTPS</h3><p>Сайт опубликован по&nbsp;рабочему адресу с&nbsp;защищённым соединением.</p></article>
+        </div>
+
+        <div class="estate-final-grid">
+          <figure class="estate-final-screen reveal">
+            <img src="assets/cases/estate/source-footer.jpg" alt="Контакты и подвал готового сайта агентства недвижимости" loading="lazy" />
+          </figure>
+          <div class="estate-final-copy reveal">
+            <p>Я&nbsp;полностью спроектировала визуал, собрала сайт на&nbsp;Tilda, настроила адаптив и&nbsp;техническую часть, а&nbsp;затем передала готовый проект заказчику.</p>
+            <a class="estate-live-link" href="https://bestoffer-estate.ru/" target="_blank" rel="noopener noreferrer">Открыть сайт <span>↗</span></a>
           </div>
         </div>
       </section>
-      <section class="placeholder-process section" id="process">
-        <div class="placeholder-head reveal"><h2>Проблема.<br />Контекст.<br />Решение.</h2><p>Именно по этой логике здесь будет собран полный рассказ: кратко, с аргументами и большим количеством визуальных материалов.</p></div>
-        <div class="placeholder-steps">
-          <article class="placeholder-step reveal"><h3>Проблема</h3><p>Что не работает в текущем сценарии и почему это важно для пользователя и продукта.</p></article>
-          <article class="placeholder-step reveal"><h3>Контекст</h3><p>Исследование, ограничения, гипотезы, пользовательский путь и ключевые решения.</p></article>
-          <article class="placeholder-step reveal"><h3>Решение</h3><p>Финальный интерфейс, проверка сценария, результат и выводы из проекта.</p></article>
-        </div>
-      </section>
-      <section class="case-coming section reveal" id="status">
-        <h2>КЕЙС<br />ГОТОВИТСЯ<span class="pink-dot">.</span></h2>
-        <p>Сейчас это аккуратная страница-заглушка. Она уже показывает место будущего кейса, не выдавая придуманные детали за реальный процесс.</p>
-      </section>
-      <nav class="case-nav" aria-label="Навигация между кейсами"><a data-prev-link><span>← Предыдущий кейс</span><b data-prev-title></b></a><a data-next-link><span>Следующий кейс →</span><b data-next-title></b></a></nav>
+
+      <nav class="case-nav" aria-label="Навигация между кейсами">
+        <a href="case-cosmetics.html"><span>← Предыдущий кейс</span><b>Интернет‑магазин косметики</b></a>
+        <a href="case-vtb.html"><span>Следующий кейс →</span><b>Платёжный терминал</b></a>
+      </nav>
     </main>
   </body>
 </html>
