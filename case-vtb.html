@@ -7,8 +7,8 @@
     <meta name="description" content="Кейс Владиславы Задорожной: продуктовая концепция интерфейса платёжного терминала." />
     <title>Платёжный терминал — кейс Владиславы Задорожной</title>
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=48" />
-    <link rel="stylesheet" href="vtb-case.css?v=34" />
+    <link rel="stylesheet" href="styles.css?v=49" />
+    <link rel="stylesheet" href="vtb-case.css?v=36" />
     <script src="script.js?v=2" defer></script>
   </head>
   <body class="vtb-body vtb-body--quick">
@@ -45,7 +45,7 @@
       <section class="vtb-overview vtb-section" id="overview">
         <div class="vtb-section-label reveal"><p>Обзор</p></div>
         <div class="vtb-overview-intro reveal">
-          <h2>ОПЛАТА БЕЗ<br />ДОГАДОК<span>.</span></h2>
+          <h2>ИНТЕРФЕЙС ДЛЯ<br />ТЕРМИНАЛА<span>.</span></h2>
           <p>В&nbsp;учебном проекте курса ВТБ я&nbsp;спроектировала интерфейс вертикального сенсорного терминала: от&nbsp;логики сценариев и&nbsp;карты состояний до&nbsp;UI‑системы и&nbsp;3D‑модели устройства.</p>
         </div>
 
@@ -83,8 +83,11 @@
         </div>
 
         <figure class="vtb-wide-figure reveal">
-          <figcaption class="vtb-map-caption"><span>Карта экранов</span></figcaption>
-          <div class="vtb-image-frame"><img src="assets/cases/vtb/flow-map.webp" alt="Карта экранов платёжного терминала" loading="lazy" /></div>
+          <figcaption class="vtb-map-caption"><span>КАРТА ЭКРАНОВ</span></figcaption>
+          <div class="vtb-map-frame" role="region" aria-label="Карта экранов. На небольшом экране схему можно листать по горизонтали" tabindex="0">
+            <span class="vtb-map-cue" aria-hidden="true">←&nbsp;&nbsp;→</span>
+            <img src="assets/cases/vtb/screens-map.svg" alt="Карта состояний: от свободного терминала и готовности к оплате до успешной или неуспешной операции" loading="lazy" />
+          </div>
         </figure>
       </section>
 
@@ -101,18 +104,30 @@
         </div>
       </section>
 
-      <section class="vtb-ui vtb-section">
+      <section class="vtb-ui vtb-section" id="visual-style">
         <div class="vtb-ui-head reveal">
-          <h2>СПОКОЙНЫЙ ФОН. ЯРКАЯ ОБРАТНАЯ СВЯЗЬ<span class="pink-dot">.</span></h2>
+          <h2>ВИЗУАЛЬНАЯ СТИЛИСТИКА<span class="pink-dot">.</span></h2>
           <p>После проверки логики на&nbsp;вайрфреймах я&nbsp;собрала визуальную систему. Тёмная основа удерживает контраст, а&nbsp;цвет и&nbsp;3D‑иконки выделяют состояние операции и&nbsp;следующее действие.</p>
         </div>
-        <div class="vtb-direction reveal">
-          <img src="assets/cases/vtb/visual-direction.webp" alt="Визуальное направление интерфейса: тёмный градиент, стеклянные поверхности и 3D-иконки" loading="lazy" />
-          <div><span>Визуальный принцип</span><p>Эффекты создают характер, но&nbsp;не конкурируют с&nbsp;суммой, статусом и&nbsp;следующим действием.</p></div>
-        </div>
-        <div class="vtb-system-grid vtb-quick-system">
-          <figure class="reveal"><figcaption>Цвета и&nbsp;эффекты</figcaption><img src="assets/cases/vtb/colors.webp" alt="Палитра интерфейса платёжного терминала" loading="lazy" /></figure>
-          <figure class="reveal"><figcaption>Компоненты и&nbsp;состояния</figcaption><img src="assets/cases/vtb/ui-elements.webp" alt="Компоненты интерфейса платёжного терминала" loading="lazy" /></figure>
+        <div class="vtb-style-pair">
+          <figure class="vtb-style-card reveal">
+            <figcaption>Типографика и&nbsp;основные цвета</figcaption>
+            <img src="assets/cases/vtb/type-color-system.svg" alt="Шрифт Golos UI и основные цвета интерфейса: тёмный фон, синий основной и голубой акцентный" loading="lazy" />
+          </figure>
+          <div class="vtb-visual-language reveal" aria-label="Визуальное направление: тёмный градиент, стеклянные поверхности и объёмные пластиковые иконки">
+            <div class="vtb-visual-token vtb-visual-token--gradient">
+              <img class="vtb-token-icon" src="assets/cases/vtb/icon-calculator.svg" alt="" loading="lazy" />
+              <img class="vtb-token-label" src="assets/cases/vtb/label-dark-gradient.svg" alt="Dark gradient" loading="lazy" />
+            </div>
+            <div class="vtb-visual-token vtb-visual-token--plastic">
+              <img class="vtb-token-icon" src="assets/cases/vtb/icon-money.svg" alt="" loading="lazy" />
+              <img class="vtb-token-label" src="assets/cases/vtb/label-3d-icons.svg" alt="3D plastic icons" loading="lazy" />
+            </div>
+            <div class="vtb-visual-token vtb-visual-token--glass">
+              <img class="vtb-token-icon" src="assets/cases/vtb/icon-cart.svg" alt="" loading="lazy" />
+              <img class="vtb-token-label" src="assets/cases/vtb/label-glassmorphism.svg" alt="Glassmorphism" loading="lazy" />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -154,8 +169,7 @@
         </div>
       </section>
 
-      <nav class="case-nav" aria-label="Навигация между кейсами">
-        <a href="case.html"><span>←&nbsp;Предыдущий кейс</span><b>Агентство недвижимости</b></a>
+      <nav class="case-nav case-nav--single" aria-label="Навигация между кейсами">
         <a href="case-cosmetics.html"><span>Следующий кейс&nbsp;→</span><b>Интернет‑магазин косметики</b></a>
       </nav>
     </main>

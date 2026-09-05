@@ -312,6 +312,7 @@ button { color: inherit; font: inherit; }
 .project-list { display: grid; gap: 18px; }
 .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
 .project-grid--single { grid-template-columns: 1fr; }
+.project-grid--hidden { display: none; }
 
 .project-card { position: relative; min-height: min(690px, 72vw); overflow: hidden; border-radius: var(--radius); }
 .project-grid .project-card { min-height: 650px; }
@@ -531,6 +532,9 @@ button { color: inherit; font: inherit; }
 .case-nav a:last-child { border: 0; text-align: right; }
 .case-nav span { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
 .case-nav b { display: block; margin-top: 80px; font-family: var(--display-font); font-size: clamp(25px, 3vw, 48px); line-height: 1; }
+.case-nav--single { grid-template-columns: 1fr; }
+.case-nav--single a { border-right: 0; }
+.case-nav--single .case-nav--previous { text-align: left; }
 
 /* Resume */
 .resume-body { background: #181818; }
