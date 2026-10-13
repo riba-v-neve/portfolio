@@ -8,8 +8,10 @@ await new Promise((resolve, reject) => { socket.onopen = resolve; socket.onerror
 let sequence = 0;
 const pending = new Map();
 const runtimeErrors = [];
+const loadedDocuments = new Set();
 socket.onmessage = event => {
   const message = JSON.parse(event.data);
+  if (message.method === 'Page.lifecycleEvent' && message.params.name === 'load') loadedDocuments.add(message.params.loaderId);
   if (message.method === 'Runtime.exceptionThrown') runtimeErrors.push(message.params.exceptionDetails.text);
   if (!message.id) return;
   const request = pending.get(message.id);
@@ -30,12 +32,19 @@ const evaluate = async expression => {
 const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
 await send('Runtime.enable');
 await send('Page.enable');
+await send('Page.setLifecycleEventsEnabled', { enabled: true });
+await send('Network.enable');
+await send('Network.setCacheDisabled', { cacheDisabled: true });
 mkdirSync('/tmp/graphic-portfolio-qa', { recursive: true });
 
 async function loadPage(path, width, deviceScaleFactor = 1) {
   await send('Emulation.setDeviceMetricsOverride', { width, height: 950, deviceScaleFactor, mobile: width < 760 });
-  await send('Page.navigate', { url: 'http://127.0.0.1:5173/' + path });
-  await pause(700);
+  const navigation = await send('Page.navigate', { url: 'http://127.0.0.1:5173/' + path });
+  if (navigation.errorText) throw new Error(navigation.errorText);
+  for (let attempt = 0; navigation.loaderId && !loadedDocuments.has(navigation.loaderId); attempt++) {
+    if (attempt > 200) throw new Error('Preview page did not finish loading: ' + path);
+    await pause(100);
+  }
   await evaluate(`(async () => {
     document.documentElement.style.scrollBehavior = 'auto';
     document.querySelectorAll('.reveal').forEach(e => {e.classList.add('is-visible');e.style.transition='none'});

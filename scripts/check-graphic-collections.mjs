@@ -75,7 +75,7 @@ try {
   await send('Emulation.setTouchEmulationEnabled',{enabled:true,configuration:'mobile'});
   await loadPage('index.html',390);
   await pause(750);
-  check(await evaluate(\`!matchMedia('(hover: hover)').matches && Array.from(document.querySelectorAll('.deck-preview .presentation-tile')).every(e=>getComputedStyle(e).transform==='none')\`),'Touch preview starts as a stable grid');
+  check(await evaluate(\`!matchMedia('(hover: hover)').matches && Array.from(document.querySelectorAll('.deck-preview .presentation-tile')).every(e=>getComputedStyle(e).transform!=='none')\`),'Touch preview keeps the scattered slide composition');
   await evaluate(\`document.querySelector('.work-card--presentations').scrollIntoView({block:'center'})\`);
   await screenshot('presentation-preview-mobile',false);
   await send('Emulation.setTouchEmulationEnabled',{enabled:false});
