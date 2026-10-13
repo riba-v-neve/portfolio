@@ -47,7 +47,7 @@
 .shop-back { display: inline-block; margin-bottom: clamp(55px, 9vh, 100px); color: #6f6c65; font-size: 11px; text-transform: uppercase; letter-spacing: .1em; }
 .shop-back:hover { color: var(--pink); }
 .shop-kicker { margin: 0 0 18px; color: var(--shop-accent); font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .11em; }
-.shop-hero h1 { margin: 0; font-family: var(--display-font); font-size: clamp(64px, 7vw, 112px); line-height: .86; letter-spacing: 0; }
+.shop-hero h1 { margin: 0; font-family: var(--display-font); font-size: clamp(64px, 7vw, 112px); line-height: .86; letter-spacing: var(--heading-tracking); }
 .shop-hero h1 span { color: transparent; -webkit-text-stroke: 1.5px var(--shop-ink); }
 .shop-hero-lead { max-width: 600px; margin: 30px 0 25px; font-size: clamp(18px, 1.6vw, 24px); line-height: 1.3; }
 .shop-tags { display: flex; flex-wrap: wrap; gap: 7px; }
@@ -258,10 +258,18 @@
   .shop-handoff-layout { grid-template-columns: 1fr; }
 }
 
+@media (min-width: 761px) and (max-width: 900px) {
+  .shop-context-grid, .shop-outcome-grid { grid-template-columns: minmax(0,1fr); }
+  .shop-context-grid article, .shop-outcome-grid article { min-height: 0; border-right: 0; }
+  .shop-context-grid article + article { border-top: 1px solid rgba(255,255,255,.55); }
+  .shop-outcome-grid article + article { border-top: 1px solid rgba(17,17,15,.25); }
+  .shop-context-grid h3, .shop-outcome-grid h3 { margin-top: 70px; }
+}
+
 @media (max-width: 760px) {
   .shop-hero { display: block; min-height: auto; padding: 100px var(--pad) 35px; }
   .shop-back { margin-bottom: 55px; }
-  .shop-hero h1 { font-size: clamp(48px, 15vw, 74px); }
+  .shop-hero h1 { font-size: clamp(30px, 9.5vw, 40px); }
   .shop-hero-lead { margin: 24px 0 22px; font-size: 16px; }
   .shop-hero-result { margin-top: 55px; border-radius: 17px; transform: none; }
   .shop-placeholder-note { align-items: flex-start; flex-direction: column; gap: 5px; }
@@ -272,7 +280,7 @@
   .shop-section-label { margin-bottom: 48px; }
   .shop-overview-head h2,
   .shop-split-head h2,
-  .shop-handoff-head h2 { max-width: 100%; font-size: clamp(32px, 9.8vw, 46px); line-height: .96; }
+  .shop-handoff-head h2 { max-width: 100%; font-size: clamp(27px, 8vw, 36px); line-height: .96; }
   .shop-overview-head > p,
   .shop-split-head > p,
   .shop-handoff-head p { font-size: 16px; }

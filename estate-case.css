@@ -71,7 +71,7 @@
   font-family: var(--display-font);
   font-size: clamp(44px, 3.65vw, 62px);
   line-height: .89;
-  letter-spacing: -.015em;
+  letter-spacing: var(--heading-tracking);
 }
 .estate-hero h1 span { display: inline-block; color: var(--estate-green); font-size: .82em; }
 .estate-hero-lead {
@@ -202,7 +202,7 @@
   font-family: var(--display-font);
   font-size: clamp(48px, 6.8vw, 104px);
   line-height: .89;
-  letter-spacing: -.01em;
+  letter-spacing: var(--heading-tracking);
 }
 .estate-overview-head h2 span,
 .estate-showcase h2 span,
@@ -269,7 +269,7 @@
 }
 .estate-showcase-copy > p:first-child,
 .estate-mini-label { margin: 0 0 55px; color: var(--estate-green); font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; }
-.estate-showcase h2 { font-size: clamp(42px, 5.7vw, 88px); }
+.estate-showcase h2 { font-size: clamp(38px, 4.4vw, 64px); }
 .estate-showcase-text { max-width: 590px; margin: 45px 0 0; color: #4b534d; font-size: 18px; }
 .estate-showcase-image { margin: 0; padding: 18px; background: #fff; border-radius: 24px; box-shadow: 0 26px 55px rgba(15, 54, 27, .12); }
 .estate-showcase-image img { width: 100%; aspect-ratio: 1.15 / 1; object-fit: cover; object-position: top; border-radius: 15px; }

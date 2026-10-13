@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="description" content="WEB-дизайн: сайты Бестоффер и Marvel Print, макет интернет-магазина Meetche." />
+    <title>WEB-дизайн — Владислава Задорожная</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=52" />
+    <link rel="stylesheet" href="graphic.css?v=11" />
+    <script src="script.js?v=2" defer></script>
+    <script src="graphic.js?v=3" defer></script>
+  </head>
+  <body class="graphic-case graphic-case--web">
+    <a class="skip-link" href="#case-content">Перейти к&nbsp;кейсу</a>
+    <header class="site-header" data-header>
+      <a class="logo" href="index.html" aria-label="На главную"><img src="assets/images/logo.svg" alt="" /></a>
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a href="index.html#projects">Кейсы</a>
+        <a href="index.html#about">Обо&nbsp;мне</a>
+        <a href="resume.html">Резюме</a>
+      </nav>
+      <a class="header-contact" href="index.html#contact">Написать <span aria-hidden="true">↗</span></a>
+      <button class="menu-button" type="button" aria-label="Открыть меню" aria-controls="mobile-menu" aria-expanded="false" data-menu-button>
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация" data-mobile-menu>
+      <a href="index.html#projects">Кейсы</a>
+      <a href="index.html#about">Обо&nbsp;мне</a>
+      <a href="resume.html">Резюме</a>
+      <a href="index.html#contact">Контакты</a>
+    </nav>
+
+    <main id="case-content">
+      <section class="graphic-case-hero">
+        <div>
+          <a class="graphic-back" href="index.html#projects">← Все проекты</a>
+          <p class="project-type">Сайты и&nbsp;макеты</p>
+          <h1>WEB<br />ДИЗАЙН</h1>
+        </div>
+        <div class="graphic-hero-art graphic-hero-art--web" aria-hidden="true">
+          <div class="web-mini-browser"><div class="web-browser-bar"><i></i><i></i><i></i></div><img src="assets/graphic/web-bestoffer.webp" alt="" width="1440" height="960" /></div>
+          <div class="web-mini-browser"><div class="web-browser-bar"><i></i><i></i><i></i></div><img src="assets/graphic/web-marvel-school.webp" alt="" width="1440" height="960" /></div>
+        </div>
+      </section>
+      <nav class="graphic-anchor-nav" aria-label="Навигация по сайтам"><a href="#bestoffer">Бестоффер</a><a href="#marvel-school">Marvel Print</a><a href="#meetche">Интернет-магазин</a></nav>
+      <section class="graphic-section web-site-grid" aria-label="Работы по WEB-дизайну">
+        <article class="web-project reveal" id="bestoffer">
+          <div class="web-project-head"><div><p class="project-type">Сайт</p><h2>Бестоффер<span class="pink-dot">.</span></h2></div><a class="web-site-link" href="https://bestoffer-estate.ru/" target="_blank" rel="noopener noreferrer">Открыть сайт <span aria-hidden="true">↗</span></a></div>
+          <a class="web-site-preview" href="https://bestoffer-estate.ru/" target="_blank" rel="noopener noreferrer" aria-label="Открыть сайт Бестоффер"><div class="web-browser-bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="assets/graphic/web-bestoffer.webp" alt="Превью сайта агентства недвижимости Бестоффер" loading="lazy" width="1440" height="960" /></a>
+        </article>
+        <article class="web-project reveal" id="marvel-school">
+          <div class="web-project-head"><div><p class="project-type">Сайт</p><h2>Marvel Print<span class="pink-dot">.</span></h2></div><a class="web-site-link" href="https://marvelprint.ru/school/" target="_blank" rel="noopener noreferrer">Открыть сайт <span aria-hidden="true">↗</span></a></div>
+          <a class="web-site-preview" href="https://marvelprint.ru/school/" target="_blank" rel="noopener noreferrer" aria-label="Открыть сайт Marvel Print для школ"><div class="web-browser-bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="assets/graphic/web-marvel-school.webp" alt="Превью сайта Marvel Print для школ" loading="lazy" width="1440" height="960" /></a>
+        </article>
+        <article class="web-project web-project--draft reveal" id="meetche">
+          <div class="web-project-head"><div><p class="project-type">Макет в&nbsp;Figma</p><h2>Meetche<span class="pink-dot">.</span></h2></div><a class="web-site-link" href="assets/cases/cosmetics/hero-frame-86.webp" target="_blank" rel="noopener">Смотреть макет <span aria-hidden="true">↗</span></a></div>
+          <button class="web-site-preview" type="button" data-artwork aria-label="Рассмотреть макет интернет-магазина Meetche"><span class="web-browser-bar" aria-hidden="true"><i></i><i></i><i></i></span><img src="assets/cases/cosmetics/hero-frame-86.webp" alt="Макет интернет-магазина косметики Meetche в Figma, не реализованный сайт" loading="lazy" width="1800" height="1200" /></button>
+        </article>
+      </section>
+      <nav class="case-nav" aria-label="Другие проекты"><a href="case-lighthouse.html"><span>← Предыдущий проект</span><b>Фирменный стиль<br />«Дом маяков»</b></a><a href="index.html#projects"><span>Все проекты →</span><b>На главную</b></a></nav>
+    </main>
+  </body>
+</html>
